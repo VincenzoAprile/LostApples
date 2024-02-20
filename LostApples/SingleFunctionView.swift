@@ -25,6 +25,7 @@ import SwiftUI
                             .font(.title3)
                             .bold()
                             .padding(.leading, 20) // Aggiungi padding sotto il titolo
+                            .foregroundStyle(CustomColor.textColor)
                         
                         Text(function.hint)
                             .padding(-1)
@@ -32,6 +33,7 @@ import SwiftUI
                             .bold()
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(.leading, 20)
+                            .foregroundStyle(CustomColor.textColor)
                     }
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 20))

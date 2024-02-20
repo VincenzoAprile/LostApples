@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		541D46072B84DC8600D37D93 /* FuncShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46062B84DC8600D37D93 /* FuncShowView.swift */; };
 		541D460B2B84DF4000D37D93 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D460A2B84DF4000D37D93 /* Colors.swift */; };
+		541D460D2B85021400D37D93 /* DirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D460C2B85021400D37D93 /* DirectionButton.swift */; };
+		541D460F2B85022200D37D93 /* InformationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D460E2B85022200D37D93 /* InformationButton.swift */; };
 		54227B202B7F9E7F008F2055 /* LostApplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54227B1F2B7F9E7F008F2055 /* LostApplesApp.swift */; };
 		54227B222B7F9E7F008F2055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54227B212B7F9E7F008F2055 /* ContentView.swift */; };
 		54227B242B7F9E7F008F2055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54227B232B7F9E7F008F2055 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		541D46062B84DC8600D37D93 /* FuncShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncShowView.swift; sourceTree = "<group>"; };
 		541D460A2B84DF4000D37D93 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		541D460C2B85021400D37D93 /* DirectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButton.swift; sourceTree = "<group>"; };
+		541D460E2B85022200D37D93 /* InformationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationButton.swift; sourceTree = "<group>"; };
 		54227B1C2B7F9E7F008F2055 /* LostApples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostApples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54227B1F2B7F9E7F008F2055 /* LostApplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostApplesApp.swift; sourceTree = "<group>"; };
 		54227B212B7F9E7F008F2055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				54227B4F2B8391AF008F2055 /* FunctionView.swift */,
 				54227B512B839274008F2055 /* SingleFunctionView.swift */,
 				541D46062B84DC8600D37D93 /* FuncShowView.swift */,
+				541D460C2B85021400D37D93 /* DirectionButton.swift */,
+				541D460E2B85022200D37D93 /* InformationButton.swift */,
 				54227B572B839368008F2055 /* Function.swift */,
 				54227B592B839401008F2055 /* FunctionList.swift */,
 				54227B492B7FA1DF008F2055 /* DocumentationButton.swift */,
@@ -287,12 +293,14 @@
 				541D460B2B84DF4000D37D93 /* Colors.swift in Sources */,
 				54227B4C2B7FA3FB008F2055 /* AccomodationButton.swift in Sources */,
 				541D46072B84DC8600D37D93 /* FuncShowView.swift in Sources */,
+				541D460F2B85022200D37D93 /* InformationButton.swift in Sources */,
 				54227B222B7F9E7F008F2055 /* ContentView.swift in Sources */,
 				54227B4A2B7FA1DF008F2055 /* DocumentationButton.swift in Sources */,
 				54227B5A2B839401008F2055 /* FunctionList.swift in Sources */,
 				54227B4E2B7FA463008F2055 /* MainView.swift in Sources */,
 				54227B582B839368008F2055 /* Function.swift in Sources */,
 				54227B502B8391AF008F2055 /* FunctionView.swift in Sources */,
+				541D460D2B85021400D37D93 /* DirectionButton.swift in Sources */,
 				54227B202B7F9E7F008F2055 /* LostApplesApp.swift in Sources */,
 				54227B522B839274008F2055 /* SingleFunctionView.swift in Sources */,
 			);

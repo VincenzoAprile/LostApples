@@ -22,7 +22,9 @@ struct MainView: View {
                 .padding(.top, -100)
             
             Spacer()
+            
         }
+        .background(CustomColor.backgroundColorDark)
     }
 }
 

@@ -12,15 +12,42 @@ struct FunctionView: View {
     var function = FunctionList()
     
     var body: some View {
-        ScrollView{
-            VStack {
-                ForEach(function.function){ functions in
-                    SingleFunctionView(function: functions)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .padding(10)
-                }
-                .padding()
-            }
+        
+        NavigationStack{
+            
+            ScrollView{
+                
+                VStack(alignment: .leading, spacing: -50) {
+                    
+                    ForEach(function.function){ functions in
+                        NavigationLink{
+                            FuncShowView(function: functions)
+                        } label: {
+                            ZStack{
+                                
+                                SingleFunctionView(function: functions)
+                                    .padding()
+                                    .background(CustomColor.cardColor)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    .padding(-20)
+                                
+                                
+                                
+                            } //End ZStack
+                            
+                            
+                        }//End ForEach
+                        
+                    }//End VStack
+                    .shadow(radius: 10)
+                    
+                }//End ScrollView
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                //.padding(.all)
+                
+            }//End NavigationStack
+            .background(CustomColor.backgroundColorDark)
+            
         }
     }
 }

@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct DocumentationButton: View {
+    @State private var isFunctionViewPresented = false
+    
     var body: some View {
-        Button("Documentation") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        Button(action: {
+            isFunctionViewPresented = true
+        }) {
+            Text("Documentation")
         }
         .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
         .buttonStyle(.bordered)
         .controlSize(.extraLarge)
         .frame(maxWidth: .infinity, alignment: .center)
         .font(.title)
+        .fullScreenCover(isPresented: $isFunctionViewPresented) {
+            FunctionView()
+        }
     }
 }
+
 
 #Preview {
     DocumentationButton()

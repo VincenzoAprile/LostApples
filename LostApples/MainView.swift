@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var showFunctionView = false
+    
     var body: some View {
         VStack(alignment: .center) {
-                    DocumentationButton()
-                        .padding(.top, 200) // Aggiunge spazio sopra il DocumentationButton
-                    
-                    Spacer() // Spazio flessibile per spingere AccomodationButton in basso
-                    
-                    AccomodationButton()
+            
+            DocumentationButton()
+                .padding(.top, 200)
+            
+            Spacer()
+            
+            AccomodationButton()
                 .padding(.top, -100)
             
-                Spacer()
+            Spacer()
         }
     }
 }
+
+
 
 #Preview {
     MainView()

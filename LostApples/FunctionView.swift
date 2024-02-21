@@ -17,7 +17,7 @@ struct FunctionView: View {
             
             ScrollView{
                 
-                VStack(alignment: .leading, spacing: -50) {
+                VStack(alignment: .leading, spacing: 30) {
                     
                     ForEach(function.function){ functions in
                         NavigationLink{
@@ -29,6 +29,8 @@ struct FunctionView: View {
                                     .padding()
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                     .padding(-20)
+                                    .background(CustomColor.cardColor)
+
                                 
                                 InformationButton()
                                 

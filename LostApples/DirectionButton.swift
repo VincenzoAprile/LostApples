@@ -19,7 +19,7 @@ struct DirectionButton: View {
         .font(.callout)
         
         .padding(.trailing, -250)
-        .padding(.top, 100)
+        .padding(.top, 130)
         .padding(.horizontal,-20)
     }
 }

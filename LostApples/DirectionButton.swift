@@ -17,6 +17,10 @@ struct DirectionButton: View {
         .controlSize(.regular)
         .frame(maxWidth: .infinity, alignment: .center)
         .font(.callout)
+        
+        .padding(.trailing, -250)
+        .padding(.top, 100)
+        .padding(.horizontal,-20)
     }
 }
 

@@ -13,8 +13,13 @@ struct InformationButton: View {
             .controlSize(.small)
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
             .buttonStyle(.bordered)
-            .frame(maxWidth: .infinity, alignment: .center)
             .font(.title)
+        
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            .padding(.trailing, 50)
+            .padding(.top, -60)
+            .padding(.horizontal,-20)
+
     }
 }
 

@@ -27,9 +27,12 @@ struct FunctionView: View {
                                 
                                 SingleFunctionView(function: functions)
                                     .padding()
-                                    .background(CustomColor.cardColor)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                     .padding(-20)
+                                
+                                InformationButton()
+                                
+                                DirectionButton()
                                 
                                 
                                 

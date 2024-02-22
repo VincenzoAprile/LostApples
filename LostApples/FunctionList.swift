@@ -12,7 +12,7 @@ class FunctionList: ObservableObject{
                                            
         Function(name: "CodiceFiscale",imageName: "agenziaentrata", description: "Get your Appointment\nlist of documents u need to carry to office - Passport with visa\nUniversity Enrolment Letter\nUniversity Admission Letter\nOffice timings generally from 8:00AM to 20:00 PM (Monday To Friday)", category: "cfDoc", hint: "Get your Tax code done here"),
                                            
-        Function(name: "Catering Service",imageName: "foodicon", description: "Adisurc offers the catering service at canteens and affliated bodies at discounted prices.\nThe application is submitted exclusively through the online services.\nGo to this link for clear information and application process.", category: "csDoc", hint: "Adisurc offers the Catering service at affiliated Canteens")
+        Function(name: "Catering",imageName: "foodicon", description: "Adisurc offers the catering service at canteens and affliated bodies at discounted prices.\nThe application is submitted exclusively through the online services.\nGo to this link for clear information and application process.", category: "csDoc", hint: "Adisurc offers the Catering service at affiliated Canteens")
                                            
                                         
     ]

@@ -18,6 +18,7 @@ struct SingleFunctionView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 100)
                     .clipped() // Aggiungi padding all'immagine
+                    .offset(y:20)
                 
                 VStack(alignment: .leading) { // VStack per il testo
                     Text(function.name)
@@ -34,8 +35,13 @@ struct SingleFunctionView: View {
                         .padding(.leading, 20)
                         .foregroundColor(.black)
                 }
+                
+              
+                InformationButton() // Aggiungi l'InformationButton
+                DirectionButton()
+
             }
-            .frame(width: 300, height: 120)
+            .frame(width: 320, height: 150)
             .padding()
             .background(CustomColor.cardColor)
             .clipShape(RoundedRectangle(cornerRadius: 20))

@@ -9,20 +9,24 @@ import SwiftUI
 
 struct DirectionButton: View {
     var body: some View {
-        Button("Direction") {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+        VStack(spacing: 20) { // Imposta lo spazio tra gli elementi a 20 punti
+            Button(action: {
+                // Azione del bottone
+            }) {
+                Image(systemName: "map.circle")
+            }
+            .controlSize(.small)
+            .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+            .font(.title)
+            
+            Spacer(minLength: 0) // Assicura che il bottone venga spostato esattamente sotto l'elemento precedente
         }
-        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 20)))
-        .buttonStyle(.bordered)
-        .controlSize(.regular)
-        .frame(maxWidth: .infinity, alignment: .center)
-        .font(.callout)
-        
-        .padding(.trailing, -250)
-        .padding(.top, 130)
-        .padding(.horizontal,-20)
+        .offset(x:-5, y: 85) // Sposta il contenuto verso il basso di 20 punti
+
     }
 }
+
+
 
 
 #Preview {

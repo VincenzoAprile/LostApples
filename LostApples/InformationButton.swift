@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct InformationButton: View {
+    
+    @State private var isFuncShowPresented = false
+    
     var body: some View {
         Image(systemName: "info.circle.fill")
             .controlSize(.small)
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
             .buttonStyle(.bordered)
             .font(.title)
-        
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.trailing, 50)
-            .padding(.top, -60)
-            .padding(.horizontal,-20)
-
+            .offset(x: 35) // Sposta il bottone di -50 punti lungo l'asse x (verso sinistra)
     }
 }
 

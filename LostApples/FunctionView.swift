@@ -8,54 +8,43 @@
 import SwiftUI
 
 struct FunctionView: View {
-    
-    var function = FunctionList()
+    @ObservedObject var functionList = FunctionList()
     
     var body: some View {
-        
-        NavigationStack{
+        VStack {
+            Spacer()
             
-            ScrollView{
-                
-                VStack(alignment: .leading, spacing: 30) {
-                    
-                    ForEach(function.function){ functions in
-                        NavigationLink{
-                            FuncShowView(function: functions)
-                        } label: {
-                            ZStack{
-                                
-                                SingleFunctionView(function: functions)
-                                    .padding()
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    .padding(-20)
-                                    .background(CustomColor.cardColor)
-
-                                
-                                InformationButton()
-                                
-                                DirectionButton()
-                                
-                                
-                                
-                            } //End ZStack
-                            
-                            
-                        }//End ForEach
-                        
-                    }//End VStack
-                    .shadow(radius: 10)
-                    
-                }//End ScrollView
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                //.padding(.all)
-                
-            }//End NavigationStack
-            .background(CustomColor.backgroundColorDark)
+            List {
+                ForEach(functionList.function) { function in
+                    SingleFunctionView(function: function)
+                        .contextMenu {
+                            Button(action: {
+                                if let index = functionList.function.firstIndex(of: function) {
+                                    functionList.function.remove(at: index)
+                                }
+                            }) {
+                                Text("Delete")
+                                Image(systemName: "trash")
+                            }
+                        }
+                }
+                .onDelete { indexSet in
+                    functionList.function.remove(atOffsets: indexSet)
+                }
+            }
+            .listStyle(PlainListStyle())
+            .background(Color.white) // Adjust background color as needed
+            .edgesIgnoringSafeArea(.all)
+            .padding(.horizontal, 20) // Adjust the horizontal padding as needed
             
+            Spacer()
         }
     }
 }
+
+
+
+
 
 #Preview {
     FunctionView()

@@ -1,18 +1,18 @@
+////
+////  DocumentationButton.swift
+////  LostApples
+////
+////  Created by Vincenzo Aprile on 16/02/24.
+////
 //
-//  DocumentationButton.swift
-//  LostApples
-//
-//  Created by Vincenzo Aprile on 16/02/24.
-//
-
 import SwiftUI
 
 struct DocumentationButton: View {
-    @State private var isFunctionViewPresented = false
+    @State private var isDocumentsListViewPresented = false
     
     var body: some View {
         Button(action: {
-            isFunctionViewPresented = true
+            isDocumentsListViewPresented = true
         }) {
             Text("Documentation")
         }
@@ -21,13 +21,13 @@ struct DocumentationButton: View {
         .controlSize(.extraLarge)
         .frame(maxWidth: .infinity, alignment: .center)
         .font(.title)
-        .fullScreenCover(isPresented: $isFunctionViewPresented) {
-            FunctionView()
+        .fullScreenCover(isPresented: $isDocumentsListViewPresented) {
+            // Passa un elenco di documenti a DocumentsListView
+            DocumentsListView(documentList: Document.list)
         }
     }
 }
-
-
+    
 #Preview {
     DocumentationButton()
 }

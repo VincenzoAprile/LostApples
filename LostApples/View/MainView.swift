@@ -14,7 +14,8 @@ struct MainView: View {
         VStack(alignment: .center) {
             
             DocumentationButton()
-                .padding(.top, 200)
+            .padding(.top, 200)
+            
             
             Spacer()
             

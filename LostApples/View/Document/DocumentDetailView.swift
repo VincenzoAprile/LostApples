@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DocumentDetailView: View {
-    var doc: Document
+    @State var doc: Document
     
     var body: some View {
         VStack {

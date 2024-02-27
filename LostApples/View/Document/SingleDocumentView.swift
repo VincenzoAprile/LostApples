@@ -12,13 +12,17 @@ struct SingleDocumentView: View {
     
     var body: some View {
         ZStack {
+            
+            RoundedRectangle(cornerRadius: 25.0)
+                .foregroundStyle(.card)
+                .frame(width: 360, height: 150)
+                .shadow(radius: 20)
             HStack(alignment: .top) {
                 Image(document.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 100)
                     .clipped()
-                    .offset(y: 20)
                 
                 VStack(alignment: .leading) {
                     Text(document.name)
@@ -36,15 +40,14 @@ struct SingleDocumentView: View {
                         .foregroundColor(.black)
                 }
                 
-                Spacer() // Aggiungi spazio tra il testo e i pulsanti
+                // Aggiungi spazio tra il testo e i pulsanti
                 
-                DocumentView(document: document) // Aggiungi DocumentView come pulsante
-                DirectionButton()
+//                DocumentView(document: document) 
+                // Aggiungi DocumentView come pulsante
+//                DirectionButton()
             }
             .frame(width: 320, height: 150)
-            .padding()
-            .background(CustomColor.cardColor)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            
         }
     }
 }

@@ -12,10 +12,23 @@ struct DocumentsListView: View {
     var documentList: [Document] // Assicurati che documentList sia un array di Document
     
     var body: some View {
-        VStack {
-            ForEach(documentList) { document in
-                SingleDocumentView(document: document)
+        NavigationStack{
+            ZStack{
+                Color(CustomColor.backgroundColorDark)
+                    .ignoresSafeArea()
+                VStack {
+                    ForEach(documentList) { document in
+                        NavigationLink(destination: DocumentDetailView(doc: document), label: {
+                            SingleDocumentView(document: document)
+                        })
+                        .padding(.bottom, 8)
+                        
+                    }
+                    Spacer()
+                }
+                
             }
+            .navigationTitle("Documentation")
         }
     }
 }

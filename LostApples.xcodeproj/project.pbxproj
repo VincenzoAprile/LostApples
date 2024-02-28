@@ -11,13 +11,15 @@
 		541D460D2B85021400D37D93 /* DirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D460C2B85021400D37D93 /* DirectionButton.swift */; };
 		541D460F2B85022200D37D93 /* InformationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D460E2B85022200D37D93 /* InformationButton.swift */; };
 		541D46112B86338000D37D93 /* Housing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46102B86338000D37D93 /* Housing.swift */; };
-		541D46132B8633A100D37D93 /* HousingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46122B8633A100D37D93 /* HousingList.swift */; };
 		541D46152B86350300D37D93 /* SingleHousingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46142B86350300D37D93 /* SingleHousingView.swift */; };
 		541D46172B86351000D37D93 /* HousingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46162B86351000D37D93 /* HousingView.swift */; };
 		541D46192B88DFD600D37D93 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46182B88DFD600D37D93 /* DocumentView.swift */; };
 		541D461B2B88E00500D37D93 /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D461A2B88E00500D37D93 /* DocumentDetailView.swift */; };
 		541D46232B8CD41700D37D93 /* DocumentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46222B8CD41700D37D93 /* DocumentsListView.swift */; };
 		541D46252B8CD69E00D37D93 /* SingleDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46242B8CD69E00D37D93 /* SingleDocumentView.swift */; };
+		541D46272B8F722D00D37D93 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46262B8F722D00D37D93 /* DirectionView.swift */; };
+		541D46292B8F809A00D37D93 /* HousingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D46282B8F809A00D37D93 /* HousingListView.swift */; };
+		541D462B2B8F80F200D37D93 /* HousingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D462A2B8F80F200D37D93 /* HousingDetailView.swift */; };
 		54227B202B7F9E7F008F2055 /* LostApplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54227B1F2B7F9E7F008F2055 /* LostApplesApp.swift */; };
 		54227B222B7F9E7F008F2055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54227B212B7F9E7F008F2055 /* ContentView.swift */; };
 		54227B242B7F9E7F008F2055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54227B232B7F9E7F008F2055 /* Assets.xcassets */; };
@@ -54,13 +56,15 @@
 		541D460C2B85021400D37D93 /* DirectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButton.swift; sourceTree = "<group>"; };
 		541D460E2B85022200D37D93 /* InformationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationButton.swift; sourceTree = "<group>"; };
 		541D46102B86338000D37D93 /* Housing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Housing.swift; sourceTree = "<group>"; };
-		541D46122B8633A100D37D93 /* HousingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingList.swift; sourceTree = "<group>"; };
 		541D46142B86350300D37D93 /* SingleHousingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleHousingView.swift; sourceTree = "<group>"; };
 		541D46162B86351000D37D93 /* HousingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingView.swift; sourceTree = "<group>"; };
 		541D46182B88DFD600D37D93 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		541D461A2B88E00500D37D93 /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
 		541D46222B8CD41700D37D93 /* DocumentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsListView.swift; sourceTree = "<group>"; };
 		541D46242B8CD69E00D37D93 /* SingleDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDocumentView.swift; sourceTree = "<group>"; };
+		541D46262B8F722D00D37D93 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
+		541D46282B8F809A00D37D93 /* HousingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingListView.swift; sourceTree = "<group>"; };
+		541D462A2B8F80F200D37D93 /* HousingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousingDetailView.swift; sourceTree = "<group>"; };
 		54227B1C2B7F9E7F008F2055 /* LostApples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostApples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54227B1F2B7F9E7F008F2055 /* LostApplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostApplesApp.swift; sourceTree = "<group>"; };
 		54227B212B7F9E7F008F2055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,9 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				541D46102B86338000D37D93 /* Housing.swift */,
-				541D46122B8633A100D37D93 /* HousingList.swift */,
-				54227B592B839401008F2055 /* FunctionList.swift */,
 				54227B572B839368008F2055 /* Document.swift */,
+				54227B592B839401008F2055 /* FunctionList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				541D460C2B85021400D37D93 /* DirectionButton.swift */,
+				541D46262B8F722D00D37D93 /* DirectionView.swift */,
 				541D460E2B85022200D37D93 /* InformationButton.swift */,
 				54227B492B7FA1DF008F2055 /* DocumentationButton.swift */,
 				54227B4B2B7FA3FB008F2055 /* AccomodationButton.swift */,
@@ -152,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				541D46142B86350300D37D93 /* SingleHousingView.swift */,
+				541D46282B8F809A00D37D93 /* HousingListView.swift */,
+				541D462A2B8F80F200D37D93 /* HousingDetailView.swift */,
 				541D46162B86351000D37D93 /* HousingView.swift */,
 			);
 			path = Housing;
@@ -348,8 +354,9 @@
 				541D460B2B84DF4000D37D93 /* Colors.swift in Sources */,
 				541D46172B86351000D37D93 /* HousingView.swift in Sources */,
 				54227B4C2B7FA3FB008F2055 /* AccomodationButton.swift in Sources */,
-				541D46132B8633A100D37D93 /* HousingList.swift in Sources */,
 				541D460F2B85022200D37D93 /* InformationButton.swift in Sources */,
+				541D46292B8F809A00D37D93 /* HousingListView.swift in Sources */,
+				541D46272B8F722D00D37D93 /* DirectionView.swift in Sources */,
 				541D461B2B88E00500D37D93 /* DocumentDetailView.swift in Sources */,
 				54227B222B7F9E7F008F2055 /* ContentView.swift in Sources */,
 				541D46232B8CD41700D37D93 /* DocumentsListView.swift in Sources */,
@@ -361,6 +368,7 @@
 				54227B582B839368008F2055 /* Document.swift in Sources */,
 				541D46152B86350300D37D93 /* SingleHousingView.swift in Sources */,
 				541D46252B8CD69E00D37D93 /* SingleDocumentView.swift in Sources */,
+				541D462B2B8F80F200D37D93 /* HousingDetailView.swift in Sources */,
 				541D460D2B85021400D37D93 /* DirectionButton.swift in Sources */,
 				54227B202B7F9E7F008F2055 /* LostApplesApp.swift in Sources */,
 			);

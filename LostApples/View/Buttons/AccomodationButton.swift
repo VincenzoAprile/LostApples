@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct AccomodationButton: View {
-    @State private var isHousingViewPresented = false
+    @State private var isHousingListViewPresented = false
     
     
     var body: some View {
         Button(action: {
-            isHousingViewPresented = true
+            isHousingListViewPresented = true
         }) {
             Text("Accomodation")
         }
@@ -22,8 +22,8 @@ struct AccomodationButton: View {
         .controlSize(.extraLarge)
         .frame(maxWidth: .infinity, alignment: .center)
         .font(.title)
-        .fullScreenCover(isPresented: $isHousingViewPresented) {
-            HousingView()
+        .fullScreenCover(isPresented: $isHousingListViewPresented) {
+            HousingListView(housingList: Housing.list)
         }
     }
 }

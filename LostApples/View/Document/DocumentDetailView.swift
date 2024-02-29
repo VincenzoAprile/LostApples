@@ -14,19 +14,32 @@ struct DocumentDetailView: View {
         VStack {
             Text(doc.name)
                 .font(.title)
+                .multilineTextAlignment(.leading)
+                .bold()
+                .foregroundStyle(CustomColor.textColor)
+                .offset(x: 0, y: 10)
                 .padding()
             
             Text(doc.description)
-                .font(.body)
-                .foregroundColor(.gray)
+                .multilineTextAlignment(.leading)
+                .font(.callout)
+                .foregroundStyle(CustomColor.textColor)
+                .padding()
+                .offset(x: 0, y: -5)
+
             // Altre viste per visualizzare altre proprietà del documento, se necessario
             
-          DirectionButton()
+            DirectionButton()
             
         }
-        .padding()
+        .offset(y:-170)
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // Per espandere la vista per riempire l'intera finestra
+        .background(CustomColor.backgroundColorDark)
+        .ignoresSafeArea()
+
     }
 }
+
 
 
 #Preview{

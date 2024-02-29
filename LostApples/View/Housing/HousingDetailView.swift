@@ -23,7 +23,12 @@ struct HousingDetailView: View {
             
             
         }
-        .padding()    }
+        .padding()
+        .offset(y:-170)
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // Per espandere la vista per riempire l'intera finestra
+        .background(CustomColor.backgroundColorDark)
+        .ignoresSafeArea()
+    }
 }
 
 #Preview {

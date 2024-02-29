@@ -11,23 +11,24 @@ struct MainView: View {
     @State private var showFunctionView = false
     
     var body: some View {
-        VStack(alignment: .center) {
-            
-            DocumentationButton()
-            .padding(.top, 200)
-            
-            
-            Spacer()
-            
-            AccomodationButton()
-                .padding(.top, -100)
-            
-            Spacer()
+        NavigationStack {
+            NavigationView {
+                VStack(alignment: .center) {
+                    DocumentationButton()
+                        .offset(y:-110)
+                    AccomodationButton()
+                        .offset(y:10)
+
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(CustomColor.backgroundColorDark)
+
+            }
         }
-        .background(CustomColor.backgroundColorDark)
     }
-    
 }
+
+
 
 
 

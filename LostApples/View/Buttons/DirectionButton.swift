@@ -14,10 +14,11 @@ struct DirectionButton: View {
         
         NavigationLink(destination: DirectionView()) {
             Text("Direction")
-                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
-                .buttonStyle(.bordered)
-                .controlSize(.extraLarge)
-                .frame(maxWidth: .infinity, alignment: .center)
+                .frame(width: 150, height: 50)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 10)) // Imposta i bordi curvi
                 .font(.title)
         }
 

@@ -16,24 +16,34 @@ struct DocumentDetailView: View {
                 .font(.title)
                 .multilineTextAlignment(.leading)
                 .bold()
-                .foregroundStyle(CustomColor.textColor)
-                .offset(x: 0, y: 10)
+                .foregroundColor(CustomColor.textColor)
+                .offset(x: 0, y: 100)
                 .padding()
             
-            Text(doc.description)
-                .multilineTextAlignment(.leading)
-                .font(.callout)
-                .foregroundStyle(CustomColor.textColor)
-                .padding()
-                .offset(x: 0, y: -5)
-
+            VStack(alignment: .leading, spacing: 4) {
+                ForEach(doc.description.split(separator: "\n"), id: \.self) { line in
+                    HStack {
+                        Text("•") // Aggiungi un puntino all'inizio di ogni riga
+                            .foregroundColor(CustomColor.textColor)
+                            .padding(.trailing, 5) // Aggiungi spazio tra il puntino e il testo
+                        Text(String(line))
+                            .multilineTextAlignment(.leading)
+                            .font(.callout)
+                            .foregroundColor(CustomColor.textColor)
+                    }
+                }
+            }
+            .padding()
+            .offset(x: 0, y: 90)
+            
             // Altre viste per visualizzare altre proprietà del documento, se necessario
             
             DirectionButton()
+                .offset(x: 0, y: 130)
             
         }
         .offset(y:-170)
-        .frame(maxWidth: .infinity, maxHeight: .infinity) // Per espandere la vista per riempire l'intera finestra
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(CustomColor.backgroundColorDark)
         .ignoresSafeArea()
 

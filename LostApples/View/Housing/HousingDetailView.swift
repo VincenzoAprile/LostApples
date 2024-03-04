@@ -14,11 +14,13 @@ struct HousingDetailView: View {
         VStack {
             Text(house.name)
                 .font(.title)
+                .offset(x: 0, y: 90)
                 .padding()
             
             Text(house.description)
                 .font(.body)
-                .foregroundColor(.gray)
+                .foregroundColor(CustomColor.cardTextColor)
+                .offset(x: 0, y: 90)
             // Altre viste per visualizzare altre proprietà del documento, se necessario
             
             

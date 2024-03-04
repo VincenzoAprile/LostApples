@@ -21,7 +21,7 @@ struct MainView: View {
 
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(CustomColor.backgroundColorDark)
+                .background(CustomColor.cardColor)
 
             }
         }

@@ -14,7 +14,7 @@ struct DocumentationButton: View {
                     .frame(maxWidth: .infinity)
                     .padding()
                     .foregroundColor(.white)
-                    .background(Color.blue)
+                    .background(Color.brown)
                     .clipShape(RoundedRectangle(cornerRadius: 10)) // Imposta i bordi curvi
                     .font(.title)
             }

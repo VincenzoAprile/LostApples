@@ -8,33 +8,41 @@
 import SwiftUI
 
 struct HousingListView: View {
-    
-    var housingList: [Housing]
-    
+    var housingList: [Accomodation]
+
     var body: some View {
-        NavigationStack{
-            ZStack{
-                Color(CustomColor.backgroundColorDark)
-                    .ignoresSafeArea()
-                VStack {
-                    ForEach(housingList) { housing in
-                        NavigationLink(destination: HousingDetailView(house: housing), label: {
-                            SingleHousingView(housing: housing)
-                        })
-                        .padding(.bottom, 8)
+        NavigationView {
+            ScrollView { // Aggiungi una ScrollView
+                ZStack {
+                    Color(CustomColor.backgroundColorDark)
+                        .ignoresSafeArea()
+                    
+                    VStack {
+                        ForEach(housingList) { accomodation in
+                            AccomodationView(accomodation: accomodation)
+                                .padding(.bottom, 8)
+                        }
                         
+                        Spacer()
                     }
-                    Spacer()
+                    .padding(.top, 10) // Spazio sopra il titolo di navigazione
                 }
-                
             }
-            .navigationTitle("Housing")
+            .navigationTitle("Accomodation")
+            .background(CustomColor.backgroundColorDark)
         }
     }
 }
 
 struct HousingListView_Previews: PreviewProvider {
     static var previews: some View {
-        HousingListView(housingList: Housing.list)
+        let previewList: [Accomodation] = [
+            Accomodation(place: "Gianturco", imageName: "gianturco", value: "675", distance: "6.5 km", bathroom: "1", bed: "3"),
+            
+            Accomodation(place: "San Ferdinando", imageName: "sanferdinando", value: "500", distance: "3 km", bathroom: "1", bed: "1")
+        ]
+        
+        return HousingListView(housingList: previewList)
     }
 }
+

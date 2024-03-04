@@ -9,12 +9,12 @@ import SwiftUI
 
 struct AccomodationButton: View {
     var body: some View {
-            NavigationLink(destination: HousingListView(housingList: Housing.list)) {
+        NavigationLink(destination: HousingListView(housingList: Accomodation.list)) {
                 Text("Accomodation")
                     .frame(maxWidth: .infinity)
                     .padding()
                     .foregroundColor(.white)
-                    .background(Color.blue)
+                    .background(Color.brown)
                     .clipShape(RoundedRectangle(cornerRadius: 10)) // Imposta i bordi curvi
                     .font(.title)
             }

@@ -44,8 +44,6 @@ struct DocumentDetailView: View {
         }
         .offset(y:-170)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(CustomColor.backgroundColorDark)
-        .ignoresSafeArea()
 
     }
 }

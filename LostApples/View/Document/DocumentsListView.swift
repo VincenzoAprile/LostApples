@@ -14,8 +14,6 @@ struct DocumentsListView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Color(CustomColor.backgroundColorDark)
-                    .ignoresSafeArea()
                 VStack {
                     ForEach(documentList) { document in
                         NavigationLink(destination: DocumentDetailView(doc: document), label: {

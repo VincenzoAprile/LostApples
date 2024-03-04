@@ -13,10 +13,7 @@ struct HousingListView: View {
     var body: some View {
         NavigationView {
             ScrollView { // Aggiungi una ScrollView
-                ZStack {
-                    Color(CustomColor.backgroundColorDark)
-                        .ignoresSafeArea()
-                    
+                ZStack {                    
                     VStack {
                         ForEach(housingList) { accomodation in
                             AccomodationView(accomodation: accomodation)
@@ -29,7 +26,6 @@ struct HousingListView: View {
                 }
             }
             .navigationTitle("Accomodation")
-            .background(CustomColor.backgroundColorDark)
         }
     }
 }
